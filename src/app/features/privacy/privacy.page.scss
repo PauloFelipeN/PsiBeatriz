@@ -1,0 +1,2 @@
+@use 'styles/tokens' as *;
+.privacy-header { border-bottom: 1px solid $color-sand; padding-block: $space-5; }.privacy { max-width: 48rem; }.privacy h1 { font-family: $font-serif; font-size: $font-size-h1; font-weight: 500; letter-spacing: -.035em; line-height: 1; }.privacy p { color: $color-muted; font-size: 1.05rem; margin-bottom: $space-5; }.privacy a { border-bottom: 1px solid $color-terracotta; color: $color-terracotta; font-weight: 700; }

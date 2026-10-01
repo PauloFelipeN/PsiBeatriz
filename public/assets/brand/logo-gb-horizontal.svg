@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 120" role="img" aria-labelledby="title desc">
+  <title id="title">Graça Beatriz, Psicóloga</title><desc id="desc">Assinatura horizontal com o monograma GB e o nome Graça Beatriz.</desc>
+  <g fill="none" stroke="#A75B4B" stroke-linecap="round" stroke-linejoin="round"><path stroke-width="3.4" d="M92 39C85 29 73 24 60 24c-20 0-36 16-36 36s16 36 36 36c10 0 19-4 25-10V62H64"/><path stroke-width="3.4" d="M61 28v64h13c12 0 20-6 20-16 0-8-5-13-12-15 5-2 9-7 9-13 0-12-8-20-20-20H61Z"/><path stroke-width="2" d="M62 61h12c8 0 13 5 13 14s-5 16-14 16"/></g>
+  <text x="128" y="56" fill="#392C28" font-family="Georgia, serif" font-size="35" font-weight="600">Graça Beatriz</text>
+  <text x="130" y="80" fill="#73635D" font-family="Arial, sans-serif" font-size="12" letter-spacing="3">PSICÓLOGA</text>
+</svg>

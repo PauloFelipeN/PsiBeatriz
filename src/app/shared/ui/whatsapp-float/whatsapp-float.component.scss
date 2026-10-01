@@ -1,0 +1,6 @@
+@use 'styles/tokens' as *;
+
+.whatsapp-float { align-items: center; background: #426c54; border-radius: $radius-pill; bottom: $space-6; box-shadow: $shadow-lifted; color: $color-white; display: inline-flex; font-size: .88rem; font-weight: 700; gap: $space-2; padding: .82rem 1.15rem; position: fixed; right: $space-6; transition: background .2s ease, transform .2s ease; z-index: 20; }
+.whatsapp-float:hover { background: $color-ink; transform: translateY(-2px); }
+.whatsapp-float svg { height: 1.35rem; width: 1.35rem; }
+@media (max-width: $breakpoint-md) { .whatsapp-float { bottom: $space-4; height: 3.35rem; justify-content: center; padding: 0; right: $space-4; width: 3.35rem; }.whatsapp-float span { position: absolute; height: 1px; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); width: 1px; } .whatsapp-float svg { height: 1.55rem; width: 1.55rem; } }

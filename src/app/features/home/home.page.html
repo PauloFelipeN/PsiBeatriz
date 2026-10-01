@@ -1,0 +1,46 @@
+<app-site-header />
+
+<main id="inicio">
+  <section class="hero section" aria-labelledby="hero-title">
+    <div class="container hero__grid">
+      <div class="hero__content">
+        <p class="eyebrow">Psicoterapia para mulheres</p>
+        <h1 id="hero-title">Você não precisa lidar com tudo sozinha.</h1>
+        <p class="hero__lead">A psicoterapia pode ser um espaço seguro para compreender suas emoções, reconhecer padrões e construir uma relação mais saudável consigo mesma.</p>
+        <div class="hero__actions"><app-whatsapp-cta label="Quero agendar uma conversa" /><a class="text-link" href="#sobre">Conheça meu trabalho <span aria-hidden="true">↓</span></a></div>
+        <p class="hero__note">Psicoterapia para mulheres <span aria-hidden="true">•</span> Atendimento online</p>
+      </div>
+      <div class="portrait-placeholder" role="img" aria-label="Espaço reservado para fotografia profissional de Graça Beatriz">
+        <div class="portrait-placeholder__shape"></div><span>Fotografia profissional<br />de Graça Beatriz</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="como-posso-ajudar" class="section concerns" aria-labelledby="concerns-title" appReveal>
+    <div class="container"><div class="section-heading"><p class="eyebrow">Como posso ajudar</p><h2 id="concerns-title">Talvez você esteja passando por um momento em que…</h2></div>
+      <div class="concerns__grid">@for (concern of concerns; track concern) { <article class="concern-card"><span class="concern-card__dot" aria-hidden="true"></span><p>{{ concern }}</p></article> }</div>
+      <div class="section-closing"><p>Você não precisa ter todas as respostas para começar.</p><app-whatsapp-cta label="Conversar com a Graça" variant="quiet" /></div>
+    </div>
+  </section>
+
+  <section class="section space" aria-labelledby="space-title" appReveal><div class="container"><div class="section-heading section-heading--center"><p class="eyebrow">Psicoterapia</p><h2 id="space-title">Um espaço para compreender, acolher e transformar.</h2><p>A psicoterapia possibilita compreender pensamentos, emoções e comportamentos, construindo maneiras mais saudáveis de lidar com situações difíceis.</p></div>
+    <div class="pillars"><article><span>01</span><h3>Autoconhecimento</h3><p>Compreender padrões, pensamentos e emoções.</p></article><article><span>02</span><h3>Autonomia emocional</h3><p>Desenvolver recursos para lidar com desafios de forma mais consciente.</p></article><article><span>03</span><h3>Mudanças possíveis</h3><p>Transformar padrões que hoje causam sofrimento em novas possibilidades.</p></article></div>
+  </div></section>
+
+  <section id="tcc" class="section tcc" aria-labelledby="tcc-title" appReveal><div class="container tcc__grid"><div><p class="eyebrow">Abordagem</p><h2 id="tcc-title">Terapia Cognitivo-Comportamental</h2><p>A TCC é uma abordagem que convida a observar como pensamentos, emoções e comportamentos se relacionam no dia a dia. A partir dessa compreensão, o processo terapêutico é construído de maneira individualizada, respeitando suas necessidades e o seu momento.</p><app-whatsapp-cta label="Quero conhecer a terapia" variant="quiet" /></div>
+    <div class="tcc-map" aria-label="Pensamentos influenciam emoções, que influenciam comportamentos"><div>Pensamentos</div><span aria-hidden="true">→</span><div>Emoções</div><span aria-hidden="true">→</span><div>Comportamentos</div></div>
+  </div></section>
+
+  <section id="sobre" class="section about" aria-labelledby="about-title" appReveal><div class="container about__grid"><div class="about-photo" role="img" aria-label="Espaço reservado para fotografia profissional de Graça Beatriz"><span>Inserir fotografia<br />profissional aqui</span></div><div class="about__content"><p class="eyebrow">Sobre mim</p><h2 id="about-title">Prazer, sou Graça Beatriz.</h2><p>Sou Graça Beatriz de Morais, psicóloga clínica formada pelo Centro Universitário São Camilo em São Paulo, com atuação exclusiva no atendimento a mulheres.</p><p>Desde 2021, dedico-me a proporcionar um espaço acolhedor e seguro para que minhas pacientes possam explorar suas emoções, se autoconhecer e desenvolver maior autonomia emocional.</p><p>Atualmente, estou cursando uma pós-graduação em Terapia Cognitivo-Comportamental, o que enriquece minha prática com uma compreensão mais profunda do comportamento humano.</p><p>Minhas sessões são baseadas na Terapia Cognitivo-Comportamental (TCC), uma abordagem que auxilia na compreensão da relação entre pensamentos, emoções e comportamentos.</p><p>Acredito profundamente no poder transformador do acompanhamento psicológico e na sua capacidade de favorecer autonomia emocional e independência. Minha missão é acompanhar cada mulher em sua jornada de mudança, para que possa viver de forma mais consciente e tornar-se protagonista da própria história.</p><p class="crp">CRP: <strong>[PREENCHER]</strong></p></div></div></section>
+
+  <section id="atendimento" class="section process" aria-labelledby="process-title" appReveal><div class="container"><div class="section-heading section-heading--center"><p class="eyebrow">Atendimento online</p><h2 id="process-title">Como funciona o atendimento?</h2></div><ol class="process__steps"><li><span>1</span><h3>Primeiro contato</h3><p>Você entra em contato pelo WhatsApp para conversarmos sobre o atendimento.</p></li><li><span>2</span><h3>Primeira sessão</h3><p>Um primeiro encontro para compreender sua história, necessidades e objetivos.</p></li><li><span>3</span><h3>Processo terapêutico</h3><p>Construímos juntas um processo individualizado de acompanhamento.</p></li></ol></div></section>
+
+  @if (isDevelopment) { <section class="testimonials-dev" aria-label="Área de desenvolvimento"><div class="container"><p class="eyebrow">Somente desenvolvimento</p><h2>Depoimentos</h2><p>Esta seção está preparada para depoimentos reais, mediante autorização. Ela é ocultada automaticamente na versão de produção.</p></div></section> }
+
+  <section id="duvidas" class="section faq" aria-labelledby="faq-title" appReveal><div class="container faq__layout"><div><p class="eyebrow">Dúvidas</p><h2 id="faq-title">Perguntas frequentes</h2><p>Se a sua dúvida não estiver aqui, podemos conversar.</p><app-whatsapp-cta label="Falar pelo WhatsApp" variant="quiet" /></div><div class="faq__items">@for (item of faqItems; track item.question; let i = $index) { <article class="faq-item" [class.faq-item--open]="openFaq() === i"><h3><button type="button" [attr.aria-expanded]="openFaq() === i" [attr.aria-controls]="'faq-answer-' + i" (click)="toggleFaq(i)">{{ item.question }}<span aria-hidden="true">{{ openFaq() === i ? '−' : '+' }}</span></button></h3><div class="faq-item__answer" [id]="'faq-answer-' + i" [attr.aria-hidden]="openFaq() !== i"><div><p>{{ item.answer }}</p></div></div></article> }</div></div></section>
+
+  <section class="final-cta section" appReveal><div class="container"><p class="eyebrow">Seu tempo importa</p><h2>Talvez este seja o momento de começar a olhar para você com mais cuidado.</h2><p>Um espaço de escuta pode ser o começo de uma relação mais gentil com você mesma.</p><app-whatsapp-cta label="Quero agendar uma conversa" /></div></section>
+</main>
+
+<footer class="footer"><div class="container footer__grid"><div><img class="footer__logo" src="assets/brand/logo-gb-light.svg" width="120" height="120" loading="lazy" decoding="async" alt="Monograma GB de Graça Beatriz" /><p class="footer__name">Graça Beatriz</p><p>Psicóloga Clínica</p><p class="crp">CRP: <strong>[PREENCHER]</strong></p></div><nav aria-label="Links do rodapé"><a href="#inicio">Início</a><a href="#sobre">Sobre</a><a href="#tcc">TCC</a><a href="#duvidas">Dúvidas</a><a href="#atendimento">Contato</a><a [routerLink]="['/politica-de-privacidade']">Política de Privacidade</a></nav><p class="footer__copyright">© {{ currentYear }} Graça Beatriz. Todos os direitos reservados.</p></div></footer>
+<app-whatsapp-float />

@@ -1,0 +1,5 @@
+@use 'styles/tokens';
+@use 'styles/reset';
+
+html { scroll-behavior: smooth; }
+body { background: tokens.$color-porcelain; color: tokens.$color-ink; font-family: tokens.$font-sans; font-size: 1rem; line-height: 1.6; }

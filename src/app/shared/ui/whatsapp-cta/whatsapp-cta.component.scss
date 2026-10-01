@@ -1,0 +1,6 @@
+@use 'styles/tokens' as *;
+
+.cta { align-items: center; background: $color-terracotta; border-radius: $radius-pill; color: $color-white; display: inline-flex; font-size: .9rem; font-weight: 600; gap: $space-2; justify-content: center; min-height: 3rem; padding: $space-3 $space-5; transition: background .2s ease, transform .2s ease; }
+.cta:hover { background: $color-ink; transform: translateY(-2px); }
+.cta--quiet { background: transparent; border: 1px solid currentColor; color: $color-ink; }
+.cta__icon { font-size: 1.15rem; line-height: 1; }

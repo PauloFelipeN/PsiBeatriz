@@ -1,0 +1,10 @@
+<header class="header" [class.header--scrolled]="isScrolled()">
+  <div class="container header__inner">
+    <app-brand-lockup />
+    <button class="menu-button" type="button" [attr.aria-expanded]="isMenuOpen()" aria-controls="main-navigation" [attr.aria-label]="isMenuOpen() ? 'Fechar menu' : 'Abrir menu'" (click)="toggleMenu()"><span></span><span></span><span></span></button>
+    <nav id="main-navigation" class="navigation" [class.navigation--open]="isMenuOpen()" aria-label="Navegação principal">
+      <a href="#inicio" (click)="closeMenu()">Início</a><a href="#como-posso-ajudar" (click)="closeMenu()">Como posso ajudar</a><a href="#tcc" (click)="closeMenu()">TCC</a><a href="#sobre" (click)="closeMenu()">Sobre mim</a><a href="#duvidas" (click)="closeMenu()">Dúvidas</a>
+      <app-whatsapp-cta label="Agendar conversa" />
+    </nav>
+  </div>
+</header>

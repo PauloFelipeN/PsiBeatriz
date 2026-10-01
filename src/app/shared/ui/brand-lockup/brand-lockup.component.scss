@@ -1,0 +1,6 @@
+@use 'styles/tokens' as *;
+
+.brand { display: inline-flex; width: 12rem; }
+.brand img { height: auto; width: 100%; }
+
+@media (max-width: $breakpoint-md) { .brand { width: 11rem; } }

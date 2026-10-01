@@ -1,0 +1,10 @@
+@use 'tokens';
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; min-height: 100%; }
+img, svg { display: block; max-width: 100%; }
+button, input, textarea { font: inherit; }
+a { color: inherit; text-decoration: none; }
+:focus-visible { outline: 3px solid tokens.$color-terracotta; outline-offset: 4px; }
+.container { width: min(calc(100% - 2rem), tokens.$content-max); margin-inline: auto; }
+.section { padding-block: clamp(tokens.$space-16, 10vw, tokens.$space-32); }
+.eyebrow { color: tokens.$color-terracotta; font-size: .75rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
